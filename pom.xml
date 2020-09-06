@@ -10,9 +10,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.exercise</groupId>
-	<artifactId>calculator</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>calculator</name>
+	<artifactId>CalculatorClientSide</artifactId>
+	<version>1.0.1</version>
+	<name>CalculatorClientSide</name>
 	<packaging>jar</packaging>
 	<description>Calculator app server-side</description>
 
