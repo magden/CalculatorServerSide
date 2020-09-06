@@ -74,6 +74,9 @@ public class CalculatorServiceImpl implements CalculatorService {
         }
     }
 
+    /**
+     * @param arithmeticExpressionContainer the arithmetic expression to validate
+     */
     private void validateArithmeticExpression(ArithmeticExpressionContainer arithmeticExpressionContainer) {
         logger.info("Preparing to calculate arithmetic expression with operands queue:\n " +
                 arithmeticExpressionContainer.getOperandsQueue() + "\nAnd operations queue:\n" + arithmeticExpressionContainer.getOperatorsQueue());
