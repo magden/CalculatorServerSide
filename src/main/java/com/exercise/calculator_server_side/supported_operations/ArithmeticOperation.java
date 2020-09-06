@@ -1,4 +1,4 @@
-package com.exercise.calculator_server_side.supportde_operations;
+package com.exercise.calculator_server_side.supported_operations;
 
 /**
  * The object that implements this interface could be specific arithmetic operation.

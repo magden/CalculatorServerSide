@@ -1,4 +1,4 @@
-package com.exercise.calculator_server_side.supportde_operations;
+package com.exercise.calculator_server_side.supported_operations;
 
 /**
  * Supported arithmetic operations.

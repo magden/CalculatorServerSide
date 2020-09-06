@@ -1,23 +1,22 @@
-package com.exercise.calculator_server_side.supportde_operations;
-
+package com.exercise.calculator_server_side.supported_operations;
 
 import org.springframework.stereotype.Component;
 
 /**
- * Object that operates addition operation of numbers.
+ * Object that operates subtraction operation of second number from first number.
  */
 @Component
-public class AdditionOperation implements ArithmeticOperation {
+public class SubtractionOperation implements ArithmeticOperation {
     /**
-     * Adds two numbers.
+     * Operates subtraction of second number from first number
      *
      * @param firstNumber  the first number to operate
      * @param secondNumber the second number to operate
-     * @return sum of two numbers
+     * @return subtraction of second number from first number
      */
     @Override
     public String operate(Float firstNumber, Float secondNumber) {
-        float result = firstNumber + secondNumber;
+        float result = firstNumber - secondNumber;
         if ((int) result == result) {
             //if number has only zeros after the floating point
             return String.valueOf((int) result);
@@ -28,7 +27,6 @@ public class AdditionOperation implements ArithmeticOperation {
 
     @Override
     public ArType getType() {
-        return ArType.ADD;
+        return ArType.SUB;
     }
 }
-

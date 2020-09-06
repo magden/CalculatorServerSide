@@ -2,8 +2,8 @@ package com.exercise.calculator_server_side.services;
 
 
 import com.exercise.calculator_server_side.container.ArithmeticExpressionContainer;
-import com.exercise.calculator_server_side.supportde_operations.ArType;
-import com.exercise.calculator_server_side.supportde_operations.ArithmeticOperation;
+import com.exercise.calculator_server_side.supported_operations.ArType;
+import com.exercise.calculator_server_side.supported_operations.ArithmeticOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

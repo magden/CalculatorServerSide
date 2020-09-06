@@ -1,26 +1,23 @@
-package com.exercise.calculator_server_side.supportde_operations;
+package com.exercise.calculator_server_side.supported_operations;
 
 
 import org.springframework.stereotype.Component;
 
 /**
- * Object that operates division of firstNumber by secondNumber.
+ * Object that operates multiplication between two numbers.
  */
 @Component
-public class DivisionOperation implements ArithmeticOperation {
+public class MultiplicationOperation implements ArithmeticOperation {
     /**
-     * Operates division of firstNumber by secondNumber
+     * Operates multiplication of first number and second number
      *
      * @param firstNumber  the first number to operate
      * @param secondNumber the second number to operate
-     * @return division of firstNumber by secondNumber
+     * @return multiplication of first number and second number
      */
     @Override
     public String operate(Float firstNumber, Float secondNumber) {
-        if (secondNumber == 0) {
-            throw new RuntimeException("Dividing by zero is undefined.");
-        }
-        float result = firstNumber / secondNumber;
+        float result = firstNumber * secondNumber;
         if ((int) result == result) {
             //if number has only zeros after the floating point
             return String.valueOf((int) result);
@@ -31,6 +28,6 @@ public class DivisionOperation implements ArithmeticOperation {
 
     @Override
     public ArType getType() {
-        return ArType.DIV;
+        return ArType.MUL;
     }
 }
