@@ -19,6 +19,7 @@ import java.net.Socket;
  */
 @Service("SocketServerHandler")
 public class SocketServerHandlerImpl implements SocketServerHandlerService {
+
     Logger logger = LoggerFactory.getLogger(SocketServerHandlerImpl.class);
 
     private final CalculatorService calculatorService;
