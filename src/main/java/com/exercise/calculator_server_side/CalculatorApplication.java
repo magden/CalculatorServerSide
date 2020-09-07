@@ -13,7 +13,7 @@ public class CalculatorApplication {
 
     public static void main(String[] args) {
         ApplicationContext applicationContext = SpringApplication.run(CalculatorApplication.class, args);
-        //creates new sever, this server starts listening on specific port and handle requests from the client
+        //creates new server, this server starts listening on specific port and handle requests from the client
         SocketServerHandlerImpl server = (SocketServerHandlerImpl) applicationContext.getBean(
                 "SocketServerHandler");
     }

@@ -18,12 +18,7 @@ public class MultiplicationOperation implements ArithmeticOperation {
     @Override
     public String operate(Float firstNumber, Float secondNumber) {
         float result = firstNumber * secondNumber;
-        if ((int) result == result) {
-            //if number has only zeros after the floating point
-            return String.valueOf((int) result);
-        } else {
-            return String.valueOf(result);
-        }
+        return getConvertedResult(result);
     }
 
     @Override

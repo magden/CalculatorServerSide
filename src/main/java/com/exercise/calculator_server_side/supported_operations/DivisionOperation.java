@@ -18,16 +18,12 @@ public class DivisionOperation implements ArithmeticOperation {
     @Override
     public String operate(Float firstNumber, Float secondNumber) {
         if (secondNumber == 0) {
-            throw new RuntimeException("Dividing by zero is undefined.");
+            throw new ArithmeticException("Dividing by zero is undefined.");
         }
         float result = firstNumber / secondNumber;
-        if ((int) result == result) {
-            //if number has only zeros after the floating point
-            return String.valueOf((int) result);
-        } else {
-            return String.valueOf(result);
-        }
+        return getConvertedResult(result);
     }
+
 
     @Override
     public ArType getType() {

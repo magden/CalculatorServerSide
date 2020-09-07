@@ -17,4 +17,19 @@ public interface ArithmeticOperation {
      * @return the type of this operation
      */
     ArType getType();
+
+    /**
+     * Converts result to a correct format
+     *
+     * @param result the result after calculation
+     * @return result converted to the String format
+     */
+    default String getConvertedResult(float result) {
+        if ((int) result == result) {
+            //if number has only zeros after the floating point
+            return String.valueOf((int) result);
+        } else {
+            return String.valueOf(result);
+        }
+    }
 }
