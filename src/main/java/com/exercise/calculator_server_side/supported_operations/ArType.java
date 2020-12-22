@@ -20,6 +20,7 @@ public enum ArType {
     public static ArType fromString(String str) {
         for (ArType arType : values()) {
             if (arType.toString().equals(str)) {
+                System.out.println("yap");
                 return arType;
             }
         }
